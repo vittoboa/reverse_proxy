@@ -1,0 +1,15 @@
+proxy:
+
+  listen:
+    address: "127.0.0.1"
+    port: 8080
+
+  services:
+
+    - name: service
+      domain: service.com
+      hosts:
+        - address: "backend1.service.com"
+          port: 80
+        - address: "backend2.service.com"
+          port: 80
